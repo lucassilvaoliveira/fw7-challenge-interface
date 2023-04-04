@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>FW7 Challenge</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="title">
+		<p>Fw7 shorten url challenge</p>
+	</div>
+	<div class="subtitle">
+		<p>My linkedin is avaliable in:
+			<span>
+				<a class="shorted-url" href="https://fw7-challenge-server.vercel.app/search-shorted-url/qQoWlDTd4"
+					target="_blank">
+					fw7.qQoWlDTd4
+				</a>
+			</span>
+		</p>
+		<p>The server-side repository is avaliable in:
+			<span>
+				<a class="shorted-url" href="https://fw7-challenge-server.vercel.app/search-shorted-url/NgPDum08D"
+					target="_blank">
+					fw7.NgPDum08D
+				</a>
+			</span>
+		</p>
+		<p>The interface-side repository is avaliable in:
+			<span>
+				<a class="shorted-url" href="https://fw7-challenge-server.vercel.app/search-shorted-url/EfJ9BUfQy"
+					target="_blank">
+					fw7.EfJ9BUfQy
+				</a>
+			</span>
+		</p>
+		<p>In this challenge, i use Node on server side with TDD, SOLID, Clean code and Clean architeture</p>
+		<p>The server is hospeded in Vercel, interface hospeded in Vercel
+			and MongoDB database hospeded in Atlas</p>
+	</div>
+	<div class="box">
+		<h1>Try now!</h1>
+		<p class="subtitle">Pass your full url to shorten</p>
+		<input type="text" id="url" name="fullUrl" placeholder="URL" class="fullUrlTextInput">
+		<input type="submit" id='button' name="button" placeholder="testing" class="sendButton">
+	</div>
+	<div class="returned-shorted-url">
+		<p class="subtitle" id="responseMessage">Your shorted url is avaliable:
+			<span>
+				<a class="shorted-url" id="shorted-url" target="_blank"></a>
+			</span>
+		</p>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>

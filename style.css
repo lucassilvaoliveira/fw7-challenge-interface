@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo', sans-serif;
+    background: #222222;
+}
+
+.title {
+    margin: 50px 0px 0px 50px;
+    color: #B1B1B1;
+    font-size: 40px;
+}
+
+.subtitle {
+    margin: 30px 0px 0px 50px;
+    color: #B1B1B1;
+    font-size: 20px;
+}
+
+.box {
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+}
+
+.box h1 {
+    color: #04D06E;
+}
+
+.fullUrlTextInput {
+    margin: 20px 20px 0px 0px;
+    padding: 10px;
+    height: 40px;
+    width: 30%;
+    background-color: #383838;
+    border: 0px solid;
+    border-radius: 10px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.sendButton {
+    background-color: #04D06E;
+    border: 0px solid;
+    height: 40px;
+    width: 5%;
+    border-radius: 10px;
+    transition: 0.15s;
+}
+
+.sendButton:hover {
+    background: #222222;
+    color: #04D06E;
+    border: 1px solid #04D06E;
+}
+
+.returned-shorted-url {
+    text-align: center;
+}
+
+.shorted-url {
+    text-align: center;
+    color: #04D06E;
+}
