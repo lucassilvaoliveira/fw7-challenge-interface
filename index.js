@@ -1,7 +1,6 @@
 const serverUrl = "https://fw7-challenge-server.vercel.app/";
 const createShortenUrlRoute = "create-shorten-url";
 const searchShortedUrlRoute = "search-shorted-url/";
-const urlInput = $("#url").val();
 
 function fetchServer() {
     fetch(serverUrl + createShortenUrlRoute, {
@@ -21,7 +20,11 @@ function fetchServer() {
 
 $("document").ready(function () {
     $("#button").click(function () {
-        console.log(urlInput);
-        fetchServer();
+        if ($("#url").val() !== "") {
+            fetchServer();
+        } else {
+            
+            alert("URL is missing!")
+        }
     });
 });
