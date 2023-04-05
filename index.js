@@ -1,6 +1,7 @@
 const serverUrl = "https://fw7-challenge-server.vercel.app/";
 const createShortenUrlRoute = "create-shorten-url";
 const searchShortedUrlRoute = "search-shorted-url/";
+const urlValidator = new RegExp(/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/);
 
 function fetchServer() {
     fetch(serverUrl + createShortenUrlRoute, {
@@ -20,7 +21,7 @@ function fetchServer() {
 
 $("document").ready(function () {
     $("#button").click(function () {
-        if ($("#url").val() !== "") {
+        if ($("#url").val() !== "" && urlValidator.test($("#url").val())) {
             fetchServer();
         } else {
             
